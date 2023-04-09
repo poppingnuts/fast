@@ -10,6 +10,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import { calling, whtsapp2 } from "./assets";
 
 const App = () => {
   return (
@@ -27,6 +28,16 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
+        </div>
+        <div style={{ position: 'fixed', bottom: '18px', right: '20px' }}>
+          <a href="https://wa.me/+918088563651">
+            <img src={whtsapp2} alt="whtsapp" className="w-16 h-16 stic object-contains" />
+          </a>
+        </div>
+        <div style={{ position: 'fixed',bottom:"18px",left:"20px"}}>
+          <a href="tel:+918088563651">
+            <img src={calling} alt="calling" className="w-16 h-16 stic object-contains" />
+          </a>
         </div>
       </div>
     </BrowserRouter>

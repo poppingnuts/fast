@@ -32,6 +32,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import whtsapp2 from "./tech/whtsapp2.png";
+import calling from "./tech/calling.png";
+
 
 export {
   logo,
@@ -65,4 +68,7 @@ export {
   wordpress,
   python,
   shopify1,
+  whtsapp2,
+  calling
+
 };
