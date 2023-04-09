@@ -15,7 +15,7 @@ const Ball = lazy(()=>import ("./Ballmodel.jsx"))
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={null}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>

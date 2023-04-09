@@ -29,12 +29,12 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <div style={{ position: 'fixed', bottom: '18px', right: '20px' }}>
+        <div style={{ position: 'fixed', bottom: '50px', right: '20px' }}>
           <a href="https://wa.me/+918088563651">
             <img src={whtsapp2} alt="whtsapp" className="w-16 h-16 stic object-contains" />
           </a>
         </div>
-        <div style={{ position: 'fixed',bottom:"18px",left:"20px"}}>
+        <div style={{ position: 'fixed',bottom:"50px",left:"20px"}}>
           <a href="tel:+918088563651">
             <img src={calling} alt="calling" className="w-16 h-16 stic object-contains" />
           </a>
