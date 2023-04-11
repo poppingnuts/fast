@@ -2,11 +2,11 @@ import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/d
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense, lazy } from "react";
 import CanvasLoader from "../Loader";
+import { useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 
 const BallModel = (props) => {
-  const [decal] = useTexture([props.imgUrl], undefined, (texture) => {
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-  });
+  const decal = useLoader(TextureLoader, props.imgUrl);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
