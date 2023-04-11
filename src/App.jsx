@@ -11,6 +11,7 @@ import {
   StarsCanvas,
 } from "./components";
 import { calling, whtsapp2 } from "./assets";
+import { useMemo } from "react";
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works />
+        {/* <Works /> */}
         {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
