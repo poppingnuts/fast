@@ -3,10 +3,10 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  
   Hero,
   Navbar,
-  Tech,
+  
   Works,
   StarsCanvas,
 } from "./components";
@@ -23,7 +23,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {/* <Tech /> */}
         <Works />
         {/* <Feedbacks /> */}
         <div className="relative z-0">
@@ -31,12 +31,12 @@ const App = () => {
           <StarsCanvas />
         </div>
         <div style={{ position: 'fixed', bottom: '50px', right: '20px' }}>
-          <a href="https://wa.me/+918088563651">
+          <a href="https://wa.me/+918130320763">
             <img src={whtsapp2} alt="whtsapp" className="w-16 h-16 stic object-contains" />
           </a>
         </div>
         <div style={{ position: 'fixed',bottom:"50px",left:"20px"}}>
-          <a href="tel:+918088563651">
+          <a href="tel:+918130320763">
             <img src={calling} alt="calling" className="w-16 h-16 stic object-contains" />
           </a>
         </div>
