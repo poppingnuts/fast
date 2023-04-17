@@ -33,6 +33,8 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        
+
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -53,6 +55,7 @@ const Navbar = () => {
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
+            
             <li
               key={nav.id}
               className={`${
