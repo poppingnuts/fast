@@ -33,7 +33,7 @@ const App = () => {
         </div>
         <div className="flex justify-center text-gray-400 text-lg font-semibold"> 
           <Link to="/privacy">
-            Privacy Policy
+           Privacy Policy
           </Link>
         </div>
         <div style={{ position: 'fixed', bottom: '50px', right: '20px' }}>
