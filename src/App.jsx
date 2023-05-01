@@ -40,9 +40,7 @@ const App = () => {
         <Suspense fallback="">
           <Contact />
         </Suspense>
-        <Suspense fallback="">
-          <Contact />
-        </Suspense>
+        
           <StarsCanvas />
         </div>
         <div className="flex justify-center text-gray-400 text-lg font-semibold"> 
