@@ -1,14 +1,20 @@
 import {  Link  } from "react-router-dom";
-import { Suspense, lazy } from "react";
-import { StarsCanvas } from "./components/canvas";
 
-const About =lazy(()=>import("./components/About"));
-const Contact =lazy(()=>import("./components/Contact"));
-const Experience =lazy(()=>import("./components/Experience"));
-const Hero =lazy(()=>import("./components/Hero"));
-const Navbar =lazy(()=>import("./components/Navbar"));
 
-const Works =lazy(()=>import("./components/Works"));
+
+import {
+  About,
+  Contact,
+  Experience,
+  
+  Hero,
+  Navbar,
+  
+  Works,
+  StarsCanvas,
+} from "./components";
+
+
 
 import { calling, whtsapp2 } from "./assets";
 
@@ -18,28 +24,28 @@ const App = () => {
     <>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Suspense fallback="">
+        
           <Navbar />
-        </Suspense>
-        <Suspense fallback="">
+  
+        
           <Hero />
-          </Suspense>
+    
         </div>
-        <Suspense fallback="">
+        
         <About />
-          </Suspense>
-        <Suspense fallback="">
+    
+        
         <Experience />
-          </Suspense>
+    
        
-        <Suspense fallback="">
+        
         <Works />
-        </Suspense>
+  
     
         <div className="relative z-0">
-        <Suspense fallback="">
+        
           <Contact />
-        </Suspense>
+  
         
           <StarsCanvas />
         </div>
